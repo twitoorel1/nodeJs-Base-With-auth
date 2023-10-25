@@ -1,0 +1,18 @@
+{
+	"domain_client": "localhost:5173",
+	"port": 4000,
+	"database": {
+		"host": "localhost",
+		"user": "root",
+		"password": "ot2521ot",
+		"database": "oref-alert"
+	},
+	"emailService": {
+		"host": "c7.vangus.io",
+		"port": 587,
+		"auth": {
+			"user": "<EMAIL>",
+			"pass": "<PASSWORD>"
+		}
+	}
+}
