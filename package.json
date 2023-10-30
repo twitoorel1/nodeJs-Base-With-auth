@@ -5,7 +5,7 @@
 	"main": "dist/bundle.js",
 	"scripts": {
 		"start": "node ./dist/bundle.js",
-		"build": "webpack",
+		"build": "rd /s /q dist && webpack",
 		"dev": "concurrently \"webpack --watch\" \"nodemon ./dist/bundle.js\"",
 		"delete": "rd /s /q dist && npm run build && npm start",
 		"update-deps": "npm update --save",
