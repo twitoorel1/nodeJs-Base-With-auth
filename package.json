@@ -1,5 +1,5 @@
 {
-	"name": "alert",
+	"name": "project-nodejs",
 	"version": "1.0.0",
 	"description": "",
 	"main": "dist/bundle.js",
@@ -12,7 +12,7 @@
 		"update-dev-deps": "npm update --save-dev"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Orel Twito",
 	"license": "ISC",
 	"dependencies": {
 		"axios": "^1.5.1",

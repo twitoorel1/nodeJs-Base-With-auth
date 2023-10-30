@@ -90,6 +90,14 @@ npm i -D concurrently nodemon ts-loader ts-node typescript webpack webpack-cli w
 
 ```ts
 import { IUser } from './auth.types';
+
+export interface IDatabaseConfig {
+	host: string;
+	user: string;
+	password: string;
+	database: string;
+}
+
 // Global
 declare module 'express' {
 	interface Request {
