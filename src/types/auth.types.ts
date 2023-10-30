@@ -17,8 +17,8 @@ export interface IUser {
 	last_connected?: string | Date | number | any;
 
 	// Statistic
-	jwt_ac_token?: Secret;
-	jwt_rf_token?: Secret;
+	jwt_ac_token?: Secret | null;
+	jwt_rf_token?: Secret | null;
 	created_at?: Date | number | string | any;
 	updated_at?: Date | number | string | any;
 }

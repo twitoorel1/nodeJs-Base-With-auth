@@ -5,7 +5,7 @@
 		"host": "localhost",
 		"user": "root",
 		"password": "ot2521ot",
-		"database": "oref-alert"
+		"database": "project-1"
 	},
 	"emailService": {
 		"host": "c7.vangus.io",

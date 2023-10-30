@@ -75,7 +75,7 @@ async function isLogin(token: string) {
 	try {
 		const { userId } = verifyAccessToken(token) as JwtPayload;
 		if (!userId) throw new UnauthorizeError('Invalid token');
-		const findUser = await findOneById(+userId);
+		const findUser = (await findOneById(+userId)) as IUser;
 		return findUser;
 	} catch (error) {
 		console.log(error);
