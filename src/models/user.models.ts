@@ -9,7 +9,7 @@ import { IUser } from '@/types/auth.types';
 const DB_NAME = 'users';
 
 /* CRUD
-CREATE - register, login, isLogin
+CREATE - register, login, isLogin, logout
 READ - findOneById, findOneByUsername
 UPDATE - 
 DELETE - 

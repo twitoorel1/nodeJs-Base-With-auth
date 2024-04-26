@@ -10,6 +10,7 @@ import appRoutes from '@/routes';
 import errorHandler from '@/errors/errorHandler';
 import moment from 'moment';
 import momentTimezone from 'moment-timezone';
+import cookieParser from 'cookie-parser';
 
 const app = express();
 
@@ -28,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.raw());
+app.use(cookieParser());
 app.use(cors({ origin: true, credentials: true }), appRoutes);
 app.use(errorHandler);
 

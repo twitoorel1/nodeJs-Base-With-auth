@@ -41,6 +41,7 @@ async function login(req: Request, res: Response, next: NextFunction) {
 		if (!isMatch) return next(new NotFoundError('something went wrong'));
 
 		const token = await User.login(user.id, user.role);
+		// res.cookie('ac_token', token.accessToken, { httpOnly: true, maxAge: 1000 * 60 * 60 * 5 });
 		res.status(200).json({ error: false, message: 'Login Successful', isAuthenticated: true, user: userWithoutSensitiveData, ac_token: token.accessToken, rf_token: token.refreshToken });
 	} catch (error: any) {
 		if (error.name === 'ValidationError') {
